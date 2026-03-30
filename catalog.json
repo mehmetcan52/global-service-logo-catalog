@@ -1,13 +1,13 @@
 {
-  "version": "1.9",
-  "lastUpdated": "2026-03-30T19:41:30.227200",
+  "version": "2.1",
+  "lastUpdated": "2026-03-30T19:52:19.844856",
   "services": [
     {
       "id": "netflix",
       "name": "Netflix",
       "domain": "netflix.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/netflix_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/netflix_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -34,7 +34,7 @@
       "name": "Disney+",
       "domain": "disneyplus.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/disneyplus_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/disneyplus_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -52,7 +52,7 @@
       "name": "Amazon Prime Video",
       "domain": "primevideo.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/primevideo_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/primevideo_com.png",
       "plans": [
         {
           "name": "Prime",
@@ -70,7 +70,7 @@
       "name": "YouTube Premium",
       "domain": "youtube.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/youtube_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/youtube_com.png",
       "plans": [
         {
           "name": "Individual",
@@ -88,7 +88,7 @@
       "name": "Apple TV+",
       "domain": "tv.apple.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tv_apple_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tv_apple_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -106,7 +106,7 @@
       "name": "Hulu",
       "domain": "hulu.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/hulu_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/hulu_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -124,7 +124,7 @@
       "name": "Max (HBO)",
       "domain": "max.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/max_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/max_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -142,7 +142,7 @@
       "name": "Paramount+",
       "domain": "paramountplus.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/paramountplus_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/paramountplus_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -160,7 +160,7 @@
       "name": "Peacock",
       "domain": "peacocktv.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/peacocktv_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/peacocktv_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -178,7 +178,7 @@
       "name": "Crunchyroll",
       "domain": "crunchyroll.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/crunchyroll_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/crunchyroll_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -196,7 +196,7 @@
       "name": "MUBI",
       "domain": "mubi.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/mubi_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/mubi_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -214,7 +214,7 @@
       "name": "Discovery+",
       "domain": "discoveryplus.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/discoveryplus_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/discoveryplus_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -232,7 +232,7 @@
       "name": "FuboTV",
       "domain": "fubo.tv",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/fubo_tv.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/fubo_tv.png",
       "plans": [
         {
           "name": "Standard",
@@ -250,7 +250,7 @@
       "name": "Rakuten TV",
       "domain": "rakuten.tv",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/rakuten_tv.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/rakuten_tv.png",
       "plans": [
         {
           "name": "Standard",
@@ -268,7 +268,7 @@
       "name": "SkyShowtime",
       "domain": "skyshowtime.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/skyshowtime_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/skyshowtime_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -286,61 +286,7 @@
       "name": "Viaplay",
       "domain": "viaplay.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/viaplay_com.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "britbox",
-      "name": "BritBox",
-      "domain": "britbox.com",
-      "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/britbox_com.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "curiositystream",
-      "name": "CuriosityStream",
-      "domain": "curiositystream.com",
-      "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/curiositystream_com.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "vimeo",
-      "name": "Vimeo On Demand",
-      "domain": "vimeo.com",
-      "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/vimeo_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/viaplay_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -358,13 +304,13 @@
       "name": "BluTV",
       "domain": "blutv.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/blutv_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/blutv_com.png",
       "plans": [
         {
-          "name": "Monthly",
+          "name": "Standard",
           "prices": {
             "USD": 0.0,
-            "TRY": 139.9,
+            "TRY": 0.0,
             "EUR": 0.0,
             "GBP": 0.0
           }
@@ -376,13 +322,13 @@
       "name": "Exxen",
       "domain": "exxen.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/exxen_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/exxen_com.png",
       "plans": [
         {
           "name": "Standard",
           "prices": {
             "USD": 0.0,
-            "TRY": 129.0,
+            "TRY": 0.0,
             "EUR": 0.0,
             "GBP": 0.0
           }
@@ -394,7 +340,7 @@
       "name": "GAIN",
       "domain": "gain.tv",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/gain_tv.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/gain_tv.png",
       "plans": [
         {
           "name": "Standard",
@@ -412,7 +358,7 @@
       "name": "S Sport Plus",
       "domain": "ssportplus.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ssportplus_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/ssportplus_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -430,7 +376,7 @@
       "name": "TOD (beIN)",
       "domain": "todtv.com.tr",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/todtv_com_tr.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/todtv_com_tr.png",
       "plans": [
         {
           "name": "Standard",
@@ -448,25 +394,7 @@
       "name": "TV+",
       "domain": "tvplus.com.tr",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tvplus_com_tr.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "dsmart_go",
-      "name": "D-Smart GO",
-      "domain": "dsmartgo.com.tr",
-      "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/dsmartgo_com_tr.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tvplus_com_tr.png",
       "plans": [
         {
           "name": "Standard",
@@ -484,7 +412,7 @@
       "name": "Tabii Premium",
       "domain": "tabii.com",
       "category": "Video",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tabii_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tabii_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -502,7 +430,7 @@
       "name": "ChatGPT Plus",
       "domain": "openai.com",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/openai_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/openai_com.png",
       "plans": [
         {
           "name": "Plus",
@@ -520,7 +448,7 @@
       "name": "Claude Pro",
       "domain": "anthropic.com",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/anthropic_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/anthropic_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -538,7 +466,7 @@
       "name": "Midjourney",
       "domain": "midjourney.com",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/midjourney_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/midjourney_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -556,7 +484,7 @@
       "name": "Perplexity Pro",
       "domain": "perplexity.ai",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/perplexity_ai.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/perplexity_ai.png",
       "plans": [
         {
           "name": "Standard",
@@ -574,7 +502,7 @@
       "name": "Grammarly",
       "domain": "grammarly.com",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/grammarly_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/grammarly_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -592,7 +520,7 @@
       "name": "GitHub Copilot",
       "domain": "github.com",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/github_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/github_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -610,7 +538,7 @@
       "name": "Notion AI",
       "domain": "notion.so",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/notion_so.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/notion_so.png",
       "plans": [
         {
           "name": "Standard",
@@ -628,25 +556,7 @@
       "name": "ElevenLabs",
       "domain": "elevenlabs.io",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/elevenlabs_io.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "jasper",
-      "name": "Jasper AI",
-      "domain": "jasper.ai",
-      "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/jasper_ai.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/elevenlabs_io.png",
       "plans": [
         {
           "name": "Standard",
@@ -664,43 +574,7 @@
       "name": "Runway Gen-3",
       "domain": "runwayml.com",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/runwayml_com.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "pika",
-      "name": "Pika Art",
-      "domain": "pika.art",
-      "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/pika_art.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "poe",
-      "name": "Poe (Quora)",
-      "domain": "poe.com",
-      "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/poe_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/runwayml_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -718,7 +592,7 @@
       "name": "HeyGen",
       "domain": "heygen.com",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/heygen_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/heygen_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -736,25 +610,7 @@
       "name": "Leonardo.ai",
       "domain": "leonardo.ai",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/leonardo_ai.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "canva_pro",
-      "name": "Canva Pro",
-      "domain": "canva.com",
-      "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/canva_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/leonardo_ai.png",
       "plans": [
         {
           "name": "Standard",
@@ -772,7 +628,7 @@
       "name": "Descript",
       "domain": "descript.com",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/descript_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/descript_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -790,7 +646,7 @@
       "name": "Luma Dream Machine",
       "domain": "lumalabs.ai",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/lumalabs_ai.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/lumalabs_ai.png",
       "plans": [
         {
           "name": "Standard",
@@ -808,7 +664,43 @@
       "name": "Otter.ai",
       "domain": "otter.ai",
       "category": "AI",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/otter_ai.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/otter_ai.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "pika",
+      "name": "Pika Art",
+      "domain": "pika.art",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/pika_art.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper AI",
+      "domain": "jasper.ai",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/jasper_ai.png",
       "plans": [
         {
           "name": "Standard",
@@ -826,7 +718,7 @@
       "name": "Spotify",
       "domain": "spotify.com",
       "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/spotify_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/spotify_com.png",
       "plans": [
         {
           "name": "Individual",
@@ -853,7 +745,7 @@
       "name": "Apple Music",
       "domain": "music.apple.com",
       "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/music_apple_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/music_apple_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -871,7 +763,7 @@
       "name": "YouTube Music",
       "domain": "music.youtube.com",
       "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/music_youtube_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/music_youtube_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -889,7 +781,7 @@
       "name": "Tidal",
       "domain": "tidal.com",
       "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tidal_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tidal_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -907,61 +799,7 @@
       "name": "Deezer",
       "domain": "deezer.com",
       "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/deezer_com.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "amazon_music",
-      "name": "Amazon Music Unlimited",
-      "domain": "music.amazon.com",
-      "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/music_amazon_com.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "soundcloud",
-      "name": "SoundCloud Go",
-      "domain": "soundcloud.com",
-      "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/soundcloud_com.png",
-      "plans": [
-        {
-          "name": "Standard",
-          "prices": {
-            "USD": 0.0,
-            "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "id": "pandora",
-      "name": "Pandora Plus",
-      "domain": "pandora.com",
-      "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/pandora_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/deezer_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -979,7 +817,7 @@
       "name": "Fizy",
       "domain": "fizy.com",
       "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/fizy_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/fizy_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -997,7 +835,7 @@
       "name": "Muud",
       "domain": "muud.com.tr",
       "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/muud_com_tr.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/muud_com_tr.png",
       "plans": [
         {
           "name": "Standard",
@@ -1015,7 +853,7 @@
       "name": "Audible",
       "domain": "audible.com",
       "category": "Books",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/audible_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/audible_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1033,7 +871,7 @@
       "name": "Storytel",
       "domain": "storytel.com",
       "category": "Books",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/storytel_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/storytel_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1051,7 +889,7 @@
       "name": "Audioteka",
       "domain": "audioteka.com",
       "category": "Books",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/audioteka_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/audioteka_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1069,7 +907,7 @@
       "name": "Blinkist",
       "domain": "blinkist.com",
       "category": "Books",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/blinkist_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/blinkist_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1087,7 +925,7 @@
       "name": "Pocket Casts Plus",
       "domain": "pocketcasts.com",
       "category": "Music",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/pocketcasts_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/pocketcasts_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1105,7 +943,7 @@
       "name": "iCloud+",
       "domain": "apple.com",
       "category": "Cloud",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/apple_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/apple_com.png",
       "plans": [
         {
           "name": "50GB",
@@ -1141,7 +979,7 @@
       "name": "Google One",
       "domain": "google.com",
       "category": "Cloud",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/google_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/google_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1159,7 +997,7 @@
       "name": "Microsoft 365",
       "domain": "microsoft.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/microsoft_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/microsoft_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1177,7 +1015,25 @@
       "name": "Adobe Creative Cloud",
       "domain": "adobe.com",
       "category": "Design",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/adobe_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/adobe_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva Pro",
+      "domain": "canva.com",
+      "category": "Design",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/canva_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1192,10 +1048,10 @@
     },
     {
       "id": "notion",
-      "name": "Notion Plus",
+      "name": "Notion",
       "domain": "notion.so",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/notion_so.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/notion_so.png",
       "plans": [
         {
           "name": "Standard",
@@ -1213,7 +1069,7 @@
       "name": "Dropbox",
       "domain": "dropbox.com",
       "category": "Cloud",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/dropbox_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/dropbox_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1228,10 +1084,10 @@
     },
     {
       "id": "zoom",
-      "name": "Zoom Pro",
+      "name": "Zoom",
       "domain": "zoom.us",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/zoom_us.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/zoom_us.png",
       "plans": [
         {
           "name": "Standard",
@@ -1249,7 +1105,7 @@
       "name": "1Password",
       "domain": "1password.com",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/1password_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/1password_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1267,7 +1123,7 @@
       "name": "LastPass",
       "domain": "lastpass.com",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/lastpass_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/lastpass_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1285,7 +1141,7 @@
       "name": "Dashlane",
       "domain": "dashlane.com",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/dashlane_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/dashlane_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1303,7 +1159,7 @@
       "name": "Bitwarden Premium",
       "domain": "bitwarden.com",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/bitwarden_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/bitwarden_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1321,7 +1177,7 @@
       "name": "Todoist Pro",
       "domain": "todoist.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/todoist_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/todoist_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1339,7 +1195,7 @@
       "name": "TickTick Premium",
       "domain": "ticktick.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ticktick_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/ticktick_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1357,7 +1213,7 @@
       "name": "Monday.com",
       "domain": "monday.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/monday_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/monday_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1375,7 +1231,7 @@
       "name": "Slack Pro",
       "domain": "slack.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/slack_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/slack_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1393,7 +1249,7 @@
       "name": "Evernote",
       "domain": "evernote.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/evernote_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/evernote_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1411,7 +1267,7 @@
       "name": "Obsidian Sync",
       "domain": "obsidian.md",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/obsidian_md.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/obsidian_md.png",
       "plans": [
         {
           "name": "Standard",
@@ -1429,7 +1285,7 @@
       "name": "Loom Pro",
       "domain": "loom.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/loom_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/loom_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1447,7 +1303,7 @@
       "name": "Figma Professional",
       "domain": "figma.com",
       "category": "Design",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/figma_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/figma_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1465,7 +1321,7 @@
       "name": "Framer Pro",
       "domain": "framer.com",
       "category": "Design",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/framer_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/framer_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1483,7 +1339,7 @@
       "name": "Sketch",
       "domain": "sketch.com",
       "category": "Design",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/sketch_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/sketch_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1501,7 +1357,7 @@
       "name": "Craft Docs",
       "domain": "craft.do",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/craft_do.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/craft_do.png",
       "plans": [
         {
           "name": "Standard",
@@ -1519,7 +1375,7 @@
       "name": "Superhuman",
       "domain": "superhuman.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/superhuman_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/superhuman_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1537,7 +1393,7 @@
       "name": "Raycast Pro",
       "domain": "raycast.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/raycast_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/raycast_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1555,7 +1411,7 @@
       "name": "Setapp",
       "domain": "setapp.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/setapp_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/setapp_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1573,7 +1429,7 @@
       "name": "PlayStation Plus",
       "domain": "playstation.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/playstation_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/playstation_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1591,7 +1447,7 @@
       "name": "Xbox Game Pass",
       "domain": "xbox.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/xbox_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/xbox_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1609,7 +1465,7 @@
       "name": "Nintendo Switch Online",
       "domain": "nintendo.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nintendo_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/nintendo_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1627,7 +1483,7 @@
       "name": "Apple Arcade",
       "domain": "apple.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/apple_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/apple_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1645,7 +1501,7 @@
       "name": "GeForce NOW",
       "domain": "nvidia.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nvidia_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/nvidia_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1663,7 +1519,7 @@
       "name": "Discord Nitro",
       "domain": "discord.com",
       "category": "Social",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/discord_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/discord_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1681,7 +1537,7 @@
       "name": "Twitch Turbo",
       "domain": "twitch.tv",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/twitch_tv.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/twitch_tv.png",
       "plans": [
         {
           "name": "Standard",
@@ -1699,7 +1555,7 @@
       "name": "EA Play",
       "domain": "ea.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ea_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/ea_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1717,7 +1573,7 @@
       "name": "Ubisoft+",
       "domain": "ubisoft.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ubisoft_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/ubisoft_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1735,7 +1591,7 @@
       "name": "WoW Subscription",
       "domain": "blizzard.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/blizzard_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/blizzard_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1753,7 +1609,7 @@
       "name": "Humble Choice",
       "domain": "humblebundle.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/humblebundle_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/humblebundle_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1771,7 +1627,7 @@
       "name": "Roblox Premium",
       "domain": "roblox.com",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/roblox_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/roblox_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1789,7 +1645,7 @@
       "name": "Minecraft Realms",
       "domain": "minecraft.net",
       "category": "Gaming",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/minecraft_net.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/minecraft_net.png",
       "plans": [
         {
           "name": "Standard",
@@ -1807,7 +1663,7 @@
       "name": "Duolingo Super",
       "domain": "duolingo.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/duolingo_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/duolingo_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1825,7 +1681,7 @@
       "name": "MasterClass",
       "domain": "masterclass.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/masterclass_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/masterclass_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1843,7 +1699,7 @@
       "name": "Skillshare",
       "domain": "skillshare.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/skillshare_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/skillshare_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1861,7 +1717,7 @@
       "name": "Coursera Plus",
       "domain": "coursera.org",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/coursera_org.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/coursera_org.png",
       "plans": [
         {
           "name": "Standard",
@@ -1879,7 +1735,7 @@
       "name": "Udemy Personal",
       "domain": "udemy.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/udemy_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/udemy_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1897,7 +1753,7 @@
       "name": "Brilliant.org",
       "domain": "brilliant.org",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/brilliant_org.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/brilliant_org.png",
       "plans": [
         {
           "name": "Standard",
@@ -1915,7 +1771,7 @@
       "name": "Codecademy Pro",
       "domain": "codecademy.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/codecademy_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/codecademy_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1933,7 +1789,7 @@
       "name": "DataCamp",
       "domain": "datacamp.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/datacamp_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/datacamp_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1951,7 +1807,7 @@
       "name": "Babbel",
       "domain": "babbel.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/babbel_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/babbel_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1969,7 +1825,7 @@
       "name": "Busuu Premium",
       "domain": "busuu.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/busuu_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/busuu_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -1987,7 +1843,7 @@
       "name": "Cambly",
       "domain": "cambly.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/cambly_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/cambly_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2005,7 +1861,7 @@
       "name": "Lingoda",
       "domain": "lingoda.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/lingoda_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/lingoda_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2023,7 +1879,7 @@
       "name": "Memrise Pro",
       "domain": "memrise.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/memrise_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/memrise_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2041,7 +1897,7 @@
       "name": "Quizlet Plus",
       "domain": "quizlet.com",
       "category": "Education",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/quizlet_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/quizlet_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2059,7 +1915,7 @@
       "name": "Headspace",
       "domain": "headspace.com",
       "category": "Health",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/headspace_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/headspace_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2077,7 +1933,7 @@
       "name": "Calm",
       "domain": "calm.com",
       "category": "Health",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/calm_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/calm_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2095,7 +1951,7 @@
       "name": "Strava Premium",
       "domain": "strava.com",
       "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/strava_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/strava_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2113,7 +1969,7 @@
       "name": "MyFitnessPal Premium",
       "domain": "myfitnesspal.com",
       "category": "Health",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/myfitnesspal_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/myfitnesspal_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2131,7 +1987,7 @@
       "name": "Flo Premium",
       "domain": "flo.health",
       "category": "Health",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/flo_health.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/flo_health.png",
       "plans": [
         {
           "name": "Standard",
@@ -2149,7 +2005,7 @@
       "name": "Fitbit Premium",
       "domain": "fitbit.com",
       "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/fitbit_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/fitbit_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2167,7 +2023,7 @@
       "name": "Peloton App",
       "domain": "onepeloton.com",
       "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/onepeloton_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/onepeloton_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2185,7 +2041,7 @@
       "name": "Nike Training Club",
       "domain": "nike.com",
       "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nike_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/nike_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2203,7 +2059,7 @@
       "name": "Whoop Membership",
       "domain": "whoop.com",
       "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/whoop_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/whoop_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2221,7 +2077,7 @@
       "name": "Sleep Cycle Premium",
       "domain": "sleepcycle.com",
       "category": "Health",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/sleepcycle_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/sleepcycle_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2239,7 +2095,7 @@
       "name": "Aura Health",
       "domain": "aurahealth.io",
       "category": "Health",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/aurahealth_io.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/aurahealth_io.png",
       "plans": [
         {
           "name": "Standard",
@@ -2257,7 +2113,7 @@
       "name": "Noom",
       "domain": "noom.com",
       "category": "Health",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/noom_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/noom_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2275,7 +2131,7 @@
       "name": "Workout Trainer",
       "domain": "skimble.com",
       "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/skimble_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/skimble_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2293,7 +2149,7 @@
       "name": "Lifesum Premium",
       "domain": "lifesum.com",
       "category": "Health",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/lifesum_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/lifesum_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2311,7 +2167,7 @@
       "name": "LinkedIn Premium",
       "domain": "linkedin.com",
       "category": "Social",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/linkedin_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/linkedin_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2329,7 +2185,7 @@
       "name": "X (Twitter) Premium",
       "domain": "x.com",
       "category": "Social",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/x_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/x_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2347,7 +2203,7 @@
       "name": "Tinder Gold",
       "domain": "tinder.com",
       "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tinder_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tinder_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2365,7 +2221,7 @@
       "name": "Bumble Premium",
       "domain": "bumble.com",
       "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/bumble_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/bumble_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2383,7 +2239,7 @@
       "name": "Hinge+",
       "domain": "hinge.co",
       "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/hinge_co.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/hinge_co.png",
       "plans": [
         {
           "name": "Standard",
@@ -2401,7 +2257,7 @@
       "name": "Grindr Unlimited",
       "domain": "grindr.com",
       "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/grindr_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/grindr_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2419,7 +2275,7 @@
       "name": "Uber One",
       "domain": "uber.com",
       "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/uber_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/uber_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2437,7 +2293,7 @@
       "name": "Instacart+",
       "domain": "instacart.com",
       "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/instacart_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/instacart_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2455,7 +2311,7 @@
       "name": "Walmart+",
       "domain": "walmart.com",
       "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/walmart_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/walmart_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2473,7 +2329,7 @@
       "name": "Yemeksepeti Plus",
       "domain": "yemeksepeti.com",
       "category": "Food",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/yemeksepeti_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/yemeksepeti_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2491,7 +2347,7 @@
       "name": "Getir+",
       "domain": "getir.com",
       "category": "Food",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/getir_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/getir_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2509,7 +2365,7 @@
       "name": "Money Pro",
       "domain": "migros.com.tr",
       "category": "Food",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/migros_com_tr.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/migros_com_tr.png",
       "plans": [
         {
           "name": "Standard",
@@ -2527,7 +2383,7 @@
       "name": "Delivery Hero",
       "domain": "deliveryhero.com",
       "category": "Food",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/deliveryhero_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/deliveryhero_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2545,7 +2401,7 @@
       "name": "HelloFresh",
       "domain": "hellofresh.com",
       "category": "Food",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/hellofresh_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/hellofresh_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2563,7 +2419,7 @@
       "name": "Blue Apron",
       "domain": "blueapron.com",
       "category": "Food",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/blueapron_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/blueapron_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2581,7 +2437,7 @@
       "name": "Medium Membership",
       "domain": "medium.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/medium_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/medium_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2599,7 +2455,7 @@
       "name": "NY Times",
       "domain": "nytimes.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nytimes_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/nytimes_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2617,7 +2473,7 @@
       "name": "Wall Street Journal",
       "domain": "wsj.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/wsj_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/wsj_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2635,7 +2491,7 @@
       "name": "The Economist",
       "domain": "economist.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/economist_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/economist_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2653,7 +2509,7 @@
       "name": "Financial Times",
       "domain": "ft.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ft_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/ft_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2671,7 +2527,7 @@
       "name": "Kindle Unlimited",
       "domain": "amazon.com",
       "category": "Books",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/amazon_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/amazon_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2689,7 +2545,7 @@
       "name": "Magzter Gold",
       "domain": "magzter.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/magzter_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/magzter_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2707,7 +2563,7 @@
       "name": "Readly",
       "domain": "readly.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/readly_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/readly_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2725,7 +2581,7 @@
       "name": "Pocket Premium",
       "domain": "getpocket.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/getpocket_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/getpocket_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2743,7 +2599,7 @@
       "name": "Instapaper Premium",
       "domain": "instapaper.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/instapaper_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/instapaper_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2761,7 +2617,7 @@
       "name": "The Athletic",
       "domain": "theathletic.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/theathletic_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/theathletic_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2779,7 +2635,7 @@
       "name": "Substack Sub",
       "domain": "substack.com",
       "category": "News",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/substack_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/substack_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2797,7 +2653,7 @@
       "name": "Surfshark VPN",
       "domain": "surfshark.com",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/surfshark_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/surfshark_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2815,7 +2671,7 @@
       "name": "NordVPN",
       "domain": "nordvpn.com",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nordvpn_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/nordvpn_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2833,7 +2689,7 @@
       "name": "ExpressVPN",
       "domain": "expressvpn.com",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/expressvpn_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/expressvpn_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2851,7 +2707,7 @@
       "name": "Proton Mail Plus",
       "domain": "proton.me",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/proton_me.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/proton_me.png",
       "plans": [
         {
           "name": "Standard",
@@ -2869,7 +2725,7 @@
       "name": "Mullvad VPN",
       "domain": "mullvad.net",
       "category": "Security",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/mullvad_net.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/mullvad_net.png",
       "plans": [
         {
           "name": "Standard",
@@ -2887,7 +2743,7 @@
       "name": "Strapi Cloud",
       "domain": "strapi.io",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/strapi_io.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/strapi_io.png",
       "plans": [
         {
           "name": "Standard",
@@ -2905,7 +2761,7 @@
       "name": "Netlify Pro",
       "domain": "netlify.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/netlify_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/netlify_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2923,7 +2779,7 @@
       "name": "Vercel Pro",
       "domain": "vercel.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/vercel_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/vercel_com.png",
       "plans": [
         {
           "name": "Standard",
@@ -2941,7 +2797,7 @@
       "name": "DigitalOcean",
       "domain": "digitalocean.com",
       "category": "Productivity",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/digitalocean_com.png",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/digitalocean_com.png",
       "plans": [
         {
           "name": "Standard",

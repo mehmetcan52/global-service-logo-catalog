@@ -431,7 +431,7 @@ class VectorLogoEngine:
                 
                 # KALİTE KONTROL: SVG'ler çok küçük boyutlu olabilir (300 byte bile olabilir), 
                 # Ama PNG/JPG ise en az 1500 byte olmalı ki çamur gibi ikonları eleyelim.
-                is_valid_svg = ext == '.svg' and file_size > 300
+                is_valid_svg = ext == '.svg' and file_size > 100
                 is_valid_raster = ext != '.svg' and file_size > 1500
                 
                 if is_valid_svg or is_valid_raster:
@@ -476,7 +476,7 @@ def main():
             ext = os.path.splitext(existing_file)[1]
             
             # Eğer mevcut dosya SVG ise veya 1.5KB'dan büyük başka bir formattaysa indirmeye gerek yok
-            if (ext == '.svg' and file_size > 300) or (ext != '.svg' and file_size > 1500):
+            if (ext == '.svg' and file_size > 100) or (ext != '.svg' and file_size > 1500):
                 needs_download = False
                 final_ext = ext
                 

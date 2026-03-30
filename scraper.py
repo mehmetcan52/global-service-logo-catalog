@@ -350,22 +350,21 @@ SERVICES = [
     {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"}
 ]
 
-class LogoDevHDPlusEngine:
+class ModernLogoEngine:
     def __init__(self):
         self.session = requests.Session()
-        # En kaliteli Retina ikonları çekmek için iPhone 15 Pro simülasyonu
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
         }
 
-    def get_apple_icon_fallback(self, domain):
-        """Eğer Logo.dev başarısız olursa sitenin içindeki Apple ikonunu arar."""
+    def scrape_html_for_icon(self, domain):
+        """Sadece API'ler çökerse son çare olarak sitenin HTML'ine sızar."""
         try:
             url = f"https://www.{domain}"
-            res = self.session.get(url, headers=self.headers, timeout=10)
-            soup = BeautifulSoup(res.text, 'html.parser')
+            res = self.session.get(url, headers=self.headers, timeout=8)
+            if res.status_code != 200: return None
             
-            # En büyük ikonu bul
+            soup = BeautifulSoup(res.text, 'html.parser')
             icons = soup.find_all("link", rel=re.compile(r"apple-touch-icon|icon", re.I))
             best_href = None
             max_size = 0
@@ -390,38 +389,45 @@ class LogoDevHDPlusEngine:
         return None
 
     def fetch_logo(self, domain, path):
-        # ÖNCELİK SIRALAMASI
+        # YENİ ŞELALE SİSTEMİ (Clearbit Çöpe Atıldı)
         sources = [
-            # 1. Logo.dev (Ana Kaynak - 512px)
-            f"https://img.logo.dev/{domain}?size=512",
-            
-            # 2. HTML Apple Touch Icon (İkinci en kaliteli kaynak)
-            self.get_apple_icon_fallback(domain),
-            
-            # 3. Clearbit (Yedek - 512px)
-            f"https://logo.clearbit.com/{domain}?size=512"
+            ("Logo.dev", f"https://img.logo.dev/{domain}?size=512"),
+            ("Icon.horse", f"https://icon.horse/icon/{domain}"), # Yeni Güçlü Yedek
+            ("Google S2", f"https://www.google.com/s2/favicons?domain={domain}&sz=256")
         ]
 
-        for url in sources:
-            if not url: continue
+        # 1. Aşama: Modern API'leri Dene
+        for source_name, url in sources:
             try:
                 res = self.session.get(url, headers=self.headers, timeout=10)
-                
-                # KALİTE KONTROLÜ: 10KB (10.000 byte) altını HD kabul etmiyoruz.
-                if res.status_code == 200 and len(res.content) > 10000:
+                # 1.5 KB (1500 byte) üstü gerçek bir görseldir.
+                if res.status_code == 200 and len(res.content) > 1500:
                     with open(path, 'wb') as f:
                         f.write(res.content)
-                    return True
+                    return source_name
             except:
                 continue
-        return False
+                
+        # 2. Aşama: Hiçbiri bulamadıysa HTML Scraper'ı çalıştır
+        html_url = self.scrape_html_for_icon(domain)
+        if html_url:
+            try:
+                res = self.session.get(html_url, headers=self.headers, timeout=10)
+                if res.status_code == 200 and len(res.content) > 1500:
+                    with open(path, 'wb') as f:
+                        f.write(res.content)
+                    return "HTML Scraper"
+            except:
+                pass
+
+        return None
 
 def main():
-    engine = LogoDevHDPlusEngine()
+    engine = ModernLogoEngine()
     logo_dir = "logos"
     if not os.path.exists(logo_dir): os.makedirs(logo_dir)
 
-    print(f"🚀 Logo.dev HD+ Engine Started")
+    print("🚀 Modern Logo Engine v32.0 Started (RIP Clearbit)")
 
     catalog = {
         "lastUpdated": datetime.now().isoformat(),
@@ -431,29 +437,30 @@ def main():
 
     for i, s in enumerate(SERVICES, 1):
         domain = s['domain'].replace('https://', '').replace('http://', '').split('/')[0]
+        if "googleusercontent" in domain: domain = s['id'] + ".com"
+        
         logo_fn = f"{domain.replace('.', '_')}.png"
         logo_path = f"{logo_dir}/{logo_fn}"
         
-        # Eğer logo yoksa veya 10KB altındaysa (pikselliyse) indir
-        needs_update = True
-        if os.path.exists(logo_path):
-            if os.path.getsize(logo_path) > 10000:
-                needs_update = False
-
-        if needs_update:
-            success = engine.fetch_logo(domain, logo_path)
-            status = "✨ LOGO.DEV HD" if success else "❌ NOT FOUND/LOW RES"
+        if not os.path.exists(logo_path) or os.path.getsize(logo_path) < 1500:
+            source = engine.fetch_logo(domain, logo_path)
+            if source:
+                status = f"✅ İNDİRİLDİ ({source})"
+            else:
+                status = "❌ BULUNAMADI"
         else:
-            status = "📦 ALREADY HD"
+            status = "📦 ZATEN VAR (HD)"
 
-        print(f"[{i}/{len(SERVICES)}] {status}: {s['name']}")
+        print(f"[{i:03d}/{len(SERVICES):03d}] {status} -> {s['name']}")
+        time.sleep(0.2) # Sunucuları kızdırmamak için ufak bir mola
+
         s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{logo_path}"
         catalog['services'].append(s)
 
     with open('catalog.json', 'w', encoding='utf-8') as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
 
-    print("\n🏁 Mission Accomplished! Catalog is now powered by Logo.dev.")
+    print("\n🏁 Taramayı Bitirdik! Modern altyapı devrede.")
 
 if __name__ == "__main__":
     main()

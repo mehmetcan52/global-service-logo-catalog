@@ -5,6 +5,7 @@ import re
 from bs4 import BeautifulSoup
 from datetime import datetime
 import time
+import glob
 # --- CONFIGURATION ---
 GH_USER = "mehmetcan52"
 GH_REPO = "subscription-catalog"
@@ -350,15 +351,26 @@ SERVICES = [
     {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"}
 ]
 
-class ModernLogoEngine:
+class VectorLogoEngine:
     def __init__(self):
         self.session = requests.Session()
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
         }
 
+    def get_extension(self, content_type, url):
+        """Header'dan veya URL'den gerçek dosya uzantısını bulur."""
+        ct = content_type.lower()
+        if 'svg' in ct or url.lower().endswith('.svg'): return '.svg'
+        if 'webp' in ct: return '.webp'
+        if 'png' in ct: return '.png'
+        if 'jpeg' in ct or 'jpg' in ct: return '.jpg'
+        if 'avif' in ct: return '.avif'
+        if 'icon' in ct: return '.ico'
+        return '.png' # Fallback (En kötü ihtimal)
+
     def scrape_html_for_icon(self, domain):
-        """Sadece API'ler çökerse son çare olarak sitenin HTML'ine sızar."""
+        """HTML içinde önce SVG, yoksa en büyük PNG/WebP arar."""
         try:
             url = f"https://www.{domain}"
             res = self.session.get(url, headers=self.headers, timeout=8)
@@ -366,11 +378,18 @@ class ModernLogoEngine:
             
             soup = BeautifulSoup(res.text, 'html.parser')
             icons = soup.find_all("link", rel=re.compile(r"apple-touch-icon|icon", re.I))
+            
             best_href = None
             max_size = 0
 
             for icon in icons:
-                href = icon.get('href')
+                href = str(icon.get('href'))
+                
+                # SVG GÖRDÜĞÜ AN VURUR! (En yüksek öncelik)
+                if icon.get('type') == 'image/svg+xml' or href.lower().endswith('.svg') or 'mask-icon' in icon.get('rel', []):
+                    best_href = href
+                    break # SVG bulduk, aramayı bırak.
+                
                 sizes = icon.get('sizes', '0x0').lower()
                 current_size = int(sizes.split('x')[0]) if 'x' in sizes else 0
                 
@@ -388,46 +407,49 @@ class ModernLogoEngine:
             pass
         return None
 
-    def fetch_logo(self, domain, path):
-        # YENİ ŞELALE SİSTEMİ (Clearbit Çöpe Atıldı)
+    def fetch_logo(self, domain, base_path):
+        """Logoyu indirir ve doğru uzantıyla kaydeder. (Örn: base_path = logos/netflix_com)"""
+        
+        # SÜPER ŞELALE: En üstte SVG kraldır!
         sources = [
-            ("Logo.dev", f"https://img.logo.dev/{domain}?size=512"),
-            ("Icon.horse", f"https://icon.horse/icon/{domain}"), # Yeni Güçlü Yedek
+            ("Logo.dev (SVG)", f"https://img.logo.dev/{domain}?format=svg"),
+            ("HTML Scraper", self.scrape_html_for_icon(domain)), # HTML içindeki SVG/HD'yi çeker
+            ("Logo.dev (PNG)", f"https://img.logo.dev/{domain}?format=png&size=512"),
+            ("Icon.horse", f"https://icon.horse/icon/{domain}"),
             ("Google S2", f"https://www.google.com/s2/favicons?domain={domain}&sz=256")
         ]
 
-        # 1. Aşama: Modern API'leri Dene
         for source_name, url in sources:
+            if not url: continue
             try:
                 res = self.session.get(url, headers=self.headers, timeout=10)
-                # 1.5 KB (1500 byte) üstü gerçek bir görseldir.
-                if res.status_code == 200 and len(res.content) > 1500:
-                    with open(path, 'wb') as f:
+                if res.status_code != 200: continue
+                
+                content_type = res.headers.get('Content-Type', '')
+                ext = self.get_extension(content_type, url)
+                file_size = len(res.content)
+                
+                # KALİTE KONTROL: SVG'ler çok küçük boyutlu olabilir (300 byte bile olabilir), 
+                # Ama PNG/JPG ise en az 1500 byte olmalı ki çamur gibi ikonları eleyelim.
+                is_valid_svg = ext == '.svg' and file_size > 300
+                is_valid_raster = ext != '.svg' and file_size > 1500
+                
+                if is_valid_svg or is_valid_raster:
+                    final_path = f"{base_path}{ext}"
+                    with open(final_path, 'wb') as f:
                         f.write(res.content)
-                    return source_name
+                    return source_name, ext
             except:
                 continue
                 
-        # 2. Aşama: Hiçbiri bulamadıysa HTML Scraper'ı çalıştır
-        html_url = self.scrape_html_for_icon(domain)
-        if html_url:
-            try:
-                res = self.session.get(html_url, headers=self.headers, timeout=10)
-                if res.status_code == 200 and len(res.content) > 1500:
-                    with open(path, 'wb') as f:
-                        f.write(res.content)
-                    return "HTML Scraper"
-            except:
-                pass
-
-        return None
+        return None, None
 
 def main():
-    engine = ModernLogoEngine()
+    engine = VectorLogoEngine()
     logo_dir = "logos"
     if not os.path.exists(logo_dir): os.makedirs(logo_dir)
 
-    print("🚀 Modern Logo Engine v32.0 Started (RIP Clearbit)")
+    print("🚀 Vector Logo Engine v33.0 Started (Multi-Format Support)")
 
     catalog = {
         "lastUpdated": datetime.now().isoformat(),
@@ -439,28 +461,51 @@ def main():
         domain = s['domain'].replace('https://', '').replace('http://', '').split('/')[0]
         if "googleusercontent" in domain: domain = s['id'] + ".com"
         
-        logo_fn = f"{domain.replace('.', '_')}.png"
-        logo_path = f"{logo_dir}/{logo_fn}"
+        base_fn = domain.replace('.', '_')
+        base_path = f"{logo_dir}/{base_fn}"
         
-        if not os.path.exists(logo_path) or os.path.getsize(logo_path) < 1500:
-            source = engine.fetch_logo(domain, logo_path)
+        # Klasörde bu domaine ait HERHANGİ bir uzantıda dosya var mı kontrol et
+        existing_files = glob.glob(f"{base_path}.*")
+        
+        needs_download = True
+        final_ext = ""
+        
+        if existing_files:
+            existing_file = existing_files[0]
+            file_size = os.path.getsize(existing_file)
+            ext = os.path.splitext(existing_file)[1]
+            
+            # Eğer mevcut dosya SVG ise veya 1.5KB'dan büyük başka bir formattaysa indirmeye gerek yok
+            if (ext == '.svg' and file_size > 300) or (ext != '.svg' and file_size > 1500):
+                needs_download = False
+                final_ext = ext
+                
+            # Eğer dosya kalitesizse sil ki yenisi düzgün insin
+            if needs_download:
+                os.remove(existing_file)
+
+        if needs_download:
+            source, ext = engine.fetch_logo(domain, base_path)
             if source:
-                status = f"✅ İNDİRİLDİ ({source})"
+                status = f"✅ İNDİRİLDİ ({source} | {ext.upper()})"
+                final_ext = ext
             else:
                 status = "❌ BULUNAMADI"
+                final_ext = ".png" # Fallback link kırık olmasın diye
         else:
-            status = "📦 ZATEN VAR (HD)"
+            status = f"📦 ZATEN VAR ({final_ext.upper()})"
 
         print(f"[{i:03d}/{len(SERVICES):03d}] {status} -> {s['name']}")
-        time.sleep(0.2) # Sunucuları kızdırmamak için ufak bir mola
+        time.sleep(0.2) 
 
-        s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{logo_path}"
+        # JSON'a gerçek dosya uzantısını kaydediyoruz (netflix_com.svg gibi)
+        s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{base_path}{final_ext}"
         catalog['services'].append(s)
 
     with open('catalog.json', 'w', encoding='utf-8') as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
 
-    print("\n🏁 Taramayı Bitirdik! Modern altyapı devrede.")
+    print("\n🏁 Taramayı Bitirdik! Vektörler ve yüksek kaliteliler depoya dizildi.")
 
 if __name__ == "__main__":
     main()

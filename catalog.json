@@ -1,6 +1,7 @@
 {
-  "version": "2.1",
-  "lastUpdated": "2026-03-30T19:52:19.844856",
+  "version": "6.0",
+  "lastUpdated": "2026-03-30T20:31:02.387330",
+  "totalServices": 154,
   "services": [
     {
       "id": "netflix",
@@ -12,19 +13,15 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 15.49,
-            "TRY": 189.99,
-            "EUR": 12.99,
-            "GBP": 10.99
+            "USD": 0,
+            "TRY": 189.99
           }
         },
         {
           "name": "Premium",
           "prices": {
-            "USD": 22.99,
-            "TRY": 299.99,
-            "EUR": 19.99,
-            "GBP": 17.99
+            "USD": 0,
+            "TRY": 299.99
           }
         }
       ]
@@ -39,10 +36,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 9.99,
-            "TRY": 134.99,
-            "EUR": 8.99,
-            "GBP": 7.99
+            "USD": 0,
+            "TRY": 134.99
           }
         }
       ]
@@ -55,12 +50,10 @@
       "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/primevideo_com.png",
       "plans": [
         {
-          "name": "Prime",
+          "name": "Standard",
           "prices": {
-            "USD": 14.99,
-            "TRY": 39.0,
-            "EUR": 8.99,
-            "GBP": 8.99
+            "TRY": 0.0,
+            "USD": 0.0
           }
         }
       ]
@@ -75,10 +68,8 @@
         {
           "name": "Individual",
           "prices": {
-            "USD": 13.99,
-            "TRY": 57.99,
-            "EUR": 12.99,
-            "GBP": 12.99
+            "USD": 0,
+            "TRY": 57.99
           }
         }
       ]
@@ -93,10 +84,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -111,10 +100,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -129,10 +116,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -147,10 +132,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -165,10 +148,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -183,10 +164,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -201,10 +180,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -219,10 +196,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -237,10 +212,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -255,10 +228,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -273,10 +244,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -291,10 +260,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -309,10 +276,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -327,10 +292,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -345,10 +308,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -363,10 +324,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -381,10 +340,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -399,10 +356,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -417,10 +372,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -436,9 +389,7 @@
           "name": "Plus",
           "prices": {
             "USD": 20.0,
-            "TRY": 0.0,
-            "EUR": 18.5,
-            "GBP": 16.0
+            "TRY": 0
           }
         }
       ]
@@ -453,10 +404,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -471,10 +420,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -489,10 +436,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -507,10 +452,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -525,10 +468,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -543,10 +484,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -561,10 +500,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -579,10 +516,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -597,10 +532,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -615,10 +548,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -633,10 +564,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -651,10 +580,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -669,10 +596,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -687,10 +612,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -705,10 +628,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -723,19 +644,15 @@
         {
           "name": "Individual",
           "prices": {
-            "USD": 11.99,
-            "TRY": 59.99,
-            "EUR": 10.99,
-            "GBP": 11.99
+            "USD": 0,
+            "TRY": 59.99
           }
         },
         {
           "name": "Family",
           "prices": {
-            "USD": 19.99,
-            "TRY": 99.99,
-            "EUR": 17.99,
-            "GBP": 17.99
+            "USD": 0,
+            "TRY": 99.99
           }
         }
       ]
@@ -750,10 +667,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -768,10 +683,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -786,10 +699,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -804,10 +715,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -822,10 +731,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -840,10 +747,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -858,10 +763,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -876,10 +779,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -894,10 +795,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -912,10 +811,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -930,10 +827,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -946,30 +841,10 @@
       "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/apple_com.png",
       "plans": [
         {
-          "name": "50GB",
+          "name": "Standard",
           "prices": {
-            "USD": 0.99,
-            "TRY": 12.99,
-            "EUR": 0.99,
-            "GBP": 0.99
-          }
-        },
-        {
-          "name": "200GB",
-          "prices": {
-            "USD": 2.99,
-            "TRY": 39.99,
-            "EUR": 2.99,
-            "GBP": 2.49
-          }
-        },
-        {
-          "name": "2TB",
-          "prices": {
-            "USD": 9.99,
-            "TRY": 129.99,
-            "EUR": 9.99,
-            "GBP": 8.99
+            "TRY": 0.0,
+            "USD": 0.0
           }
         }
       ]
@@ -984,10 +859,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1002,10 +875,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1020,10 +891,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1038,10 +907,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1056,10 +923,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1074,10 +939,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1092,10 +955,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1110,10 +971,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1128,10 +987,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1146,10 +1003,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1164,10 +1019,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1182,10 +1035,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1200,10 +1051,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1218,10 +1067,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1236,10 +1083,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1254,10 +1099,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1272,10 +1115,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1290,10 +1131,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1308,10 +1147,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1326,10 +1163,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1344,10 +1179,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1362,10 +1195,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1380,10 +1211,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1398,10 +1227,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1416,10 +1243,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1434,10 +1259,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1452,10 +1275,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1470,10 +1291,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1488,10 +1307,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1506,10 +1323,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1524,10 +1339,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1542,10 +1355,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1560,10 +1371,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1578,10 +1387,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1596,10 +1403,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1614,10 +1419,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1632,10 +1435,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1650,10 +1451,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1668,10 +1467,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1686,10 +1483,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1704,10 +1499,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1722,10 +1515,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1740,10 +1531,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1758,10 +1547,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1776,10 +1563,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1794,10 +1579,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1812,10 +1595,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1830,10 +1611,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1848,10 +1627,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1866,10 +1643,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1884,10 +1659,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1902,10 +1675,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1920,10 +1691,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1938,10 +1707,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1956,10 +1723,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1974,10 +1739,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -1992,10 +1755,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2010,10 +1771,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2028,10 +1787,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2046,10 +1803,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2064,10 +1819,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2082,10 +1835,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2100,10 +1851,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2118,10 +1867,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2136,10 +1883,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2154,10 +1899,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2172,10 +1915,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2190,10 +1931,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2208,10 +1947,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2226,10 +1963,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2244,10 +1979,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2262,10 +1995,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2280,10 +2011,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2298,10 +2027,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2316,10 +2043,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2334,10 +2059,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2352,10 +2075,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2370,10 +2091,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2388,10 +2107,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2406,10 +2123,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2424,10 +2139,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2442,10 +2155,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2460,10 +2171,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2478,10 +2187,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2496,10 +2203,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2514,10 +2219,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2532,10 +2235,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2550,10 +2251,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2568,10 +2267,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2586,10 +2283,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2604,10 +2299,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2622,10 +2315,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2640,10 +2331,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2658,10 +2347,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2676,10 +2363,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2694,10 +2379,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2712,10 +2395,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2730,10 +2411,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2748,10 +2427,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2766,10 +2443,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2784,10 +2459,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]
@@ -2802,10 +2475,8 @@
         {
           "name": "Standard",
           "prices": {
-            "USD": 0.0,
             "TRY": 0.0,
-            "EUR": 0.0,
-            "GBP": 0.0
+            "USD": 0.0
           }
         }
       ]

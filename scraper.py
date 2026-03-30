@@ -254,7 +254,7 @@ def fetch_best_logo(domain):
 
 def generate_catalog():
     # SETTINGS: Your GitHub Configuration
-    GH_USER = "curiousvolt" 
+    GH_USER = "mehmetcan52" 
     GH_REPO = "subscription-catalog"
     
     catalog = {

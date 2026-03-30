@@ -1,31 +1,36 @@
-# Bağımlılıklar (En önemlisi, binlerce dosya içerir)
+# Dependencies (The heaviest folders that should never be uploaded)
 node_modules/
 jspm_packages/
 web_archiver/
+venv/
+.venv/
+env/
 
-# Log dosyaları
+# Log files (Error and debugging records)
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 logs
 *.log
 
-# Derleme çıktıları (Build/Dist)
+# Build outputs (Production ready files)
 dist/
 build/
 out/
 .next/
 .nuxt/
 
-# Güvenlik ve Yerel Ayarlar (Şifrelerin buraya yazılır, asla GitHub'a gitmemeli)
+# Security & Environment Variables (Keep your passwords and keys private!)
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 .env*.local
+*.pem
+*.key
 
-# IDE / Editör Ayarları
+# IDE / Editor settings
 .vscode/
 .idea/
 *.suo
@@ -34,12 +39,12 @@ out/
 *.sln
 *.sw?
 
-# İşletim sistemi kalıntıları
+# Operating System files
 .DS_Store
 .DS_Store?
 _notes
 Thumbs.db
 
-# Test sonuçları
+# Testing and Coverage
 coverage/
 .nyc_output

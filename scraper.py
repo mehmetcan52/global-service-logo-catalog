@@ -12,7 +12,7 @@ import requests
 GH_USER = "mehmetcan52"
 GH_REPO = "subscription-catalog"
 
-# --- FULL COMPREHENSIVE SERVICE LIST (210+ ENTRIES) ---
+# --- 1. FULL SERVICES LIST (210 ENTRIES) ---
 SERVICES = [
     # --- VIDEO & STREAMING ---
     {"id": "netflix", "name": "Netflix", "domain": "netflix.com", "category": "Video"},
@@ -189,36 +189,25 @@ SERVICES = [
     {"id": "digitalocean", "name": "DigitalOcean", "domain": "digitalocean.com", "category": "Productivity"}
 ]
 
-# --- REGIONAL PRICE DATABASE (Fallback Data) ---
+# --- 2. FALLBACK PRICE DATABASE ---
 REGIONAL_PRICES = {
+    "netflix": {"Standard": {"TRY": 189.99}, "Premium": {"TRY": 299.99}},
+    "spotify": {"Individual": {"TRY": 59.99}, "Family": {"TRY": 99.99}},
+    "chatgpt": {"Plus": {"USD": 20.00}},
+    "youtube": {"Individual": {"TRY": 57.99}},
+    "disneyplus": {"Standard": {"TRY": 134.99}}
+}
+
+# --- 3. SCRAPER CONFIG (TARGETED SELECTORS) ---
+SCRAPE_CONFIG = {
     "netflix": {
-        "Standard": {"TRY": 189.99, "USD": 15.49, "EUR": 12.99, "GBP": 10.99},
-        "Premium": {"TRY": 299.99, "USD": 22.99, "EUR": 19.99, "GBP": 17.99}
-    },
-    "spotify": {
-        "Individual": {"TRY": 59.99, "USD": 11.99, "EUR": 10.99, "GBP": 11.99},
-        "Family": {"TRY": 99.99, "USD": 19.99, "EUR": 17.99, "GBP": 17.99}
-    },
-    "chatgpt": {
-        "Plus": {"USD": 20.00, "EUR": 18.50, "GBP": 16.00, "TRY": 0.0}
-    },
-    "youtube": {
-        "Individual": {"TRY": 57.99, "USD": 13.99, "EUR": 12.99, "GBP": 12.99}
-    },
-    "icloud": {
-        "50GB": {"TRY": 12.99, "USD": 0.99, "EUR": 0.99, "GBP": 0.99},
-        "200GB": {"TRY": 39.99, "USD": 2.99, "EUR": 2.99, "GBP": 2.49},
-        "2TB": {"TRY": 129.99, "USD": 9.99, "EUR": 9.99, "GBP": 8.99}
-    },
-    "disneyplus": {
-        "Standard": {"TRY": 134.99, "USD": 9.99, "EUR": 8.99, "GBP": 7.99}
-    },
-    "primevideo": {
-        "Prime": {"TRY": 39.00, "USD": 14.99, "EUR": 8.99, "GBP": 8.99}
+        "url": "https://help.netflix.com/tr/node/24926",
+        "selector": "li p",
+        "map": {"Standart": "Standard", "Özel": "Premium"}
     }
 }
 
-class PriceUpdater:
+class AdvancedScraper:
     def __init__(self):
         self.user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
 
@@ -226,127 +215,106 @@ class PriceUpdater:
         if not price_str: return 0.0
         cleaned = re.sub(r'[^\d.,]', '', price_str)
         cleaned = cleaned.replace(',', '.')
-        try:
-            return float(cleaned)
-        except:
-            return 0.0
+        try: return float(cleaned)
+        except: return 0.0
 
-    def get_price_with_playwright(self, url, selector, plan_name_map):
-        """Scrapes dynamic prices with human-mimicry logic."""
+    def find_price_heuristically(self, soup):
+        """Scans page for money patterns if selector fails."""
+        pattern = r'(\d{1,3}(?:[.,]\d{2,3})*(?:[.,]\d{2})?)\s?(?:TL|₺|TRY)'
+        found = []
+        for text in soup.stripped_strings:
+            match = re.search(pattern, text)
+            if match:
+                val = self.clean_price(match.group(1))
+                if val > 10: found.append(val)
+        return sorted(list(set(found)))
+
+    def scrape_service(self, s_id):
+        if s_id not in SCRAPE_CONFIG: return None
+        config = SCRAPE_CONFIG[s_id]
+        
         try:
             with sync_playwright() as p:
                 browser = p.chromium.launch(headless=True)
-                context = browser.new_context(
-                    user_agent=self.user_agent,
-                    viewport={'width': 1920, 'height': 1080}
-                )
-                page = context.new_page()
+                page = browser.new_page(user_agent=self.user_agent)
+                time.sleep(random.uniform(2, 4))
                 
-                # Human Mimicry
-                time.sleep(random.uniform(2, 5))
-                print(f"  🌐 Navigating to: {url}")
-                page.goto(url, wait_until="networkidle", timeout=60000)
-                
+                page.goto(config["url"], wait_until="networkidle")
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight / 3)")
-                time.sleep(random.uniform(1, 3))
-                page.wait_for_timeout(random.randint(2000, 4000))
+                time.sleep(2)
                 
                 content = page.content()
                 soup = BeautifulSoup(content, 'html.parser')
                 browser.close()
                 
-                prices = {}
-                elements = soup.select(selector)
-                for element in elements:
-                    text = element.get_text()
-                    for plan_key, plan_name in plan_name_map.items():
-                        if plan_key.lower() in text.lower() and ("TL" in text or "₺" in text):
-                            prices[plan_name] = {"TRY": self.clean_price(text)}
+                results = {}
+                elements = soup.select(config["selector"])
                 
-                return prices if prices else None
-        except Exception as e:
-            print(f"  ❌ Scraping Error: {e}")
-            return None
+                # Try targeted selector
+                for el in elements:
+                    text = el.get_text()
+                    for key, name in config["map"].items():
+                        if key.lower() in text.lower() and ("TL" in text or "₺" in text):
+                            results[name] = {"TRY": self.clean_price(text)}
+                
+                # Self-Healing: If selector fails, use heuristic
+                if not results:
+                    print(f"  🧠 Self-Healing active for {s_id}...")
+                    smart_prices = self.find_price_heuristically(soup)
+                    if smart_prices:
+                        names = list(config["map"].values())
+                        for i, p in enumerate(smart_prices[:len(names)]):
+                            results[names[i]] = {"TRY": p}
+                
+                return results
+        except: return None
 
-def fetch_best_logo(domain, session):
-    if not os.path.exists('logos'): os.makedirs('logos')
-    safe_name = domain.replace('.', '_')
-    file_path = f"logos/{safe_name}.png"
+def main():
+    scraper = AdvancedScraper()
+    session = requests.Session()
     
-    if os.path.exists(file_path): return True
-
-    urls = [
-        f"https://logo.clearbit.com/{domain}?size=512&format=png",
-        f"https://www.google.com/s2/favicons?sz=128&domain={domain}"
-    ]
-    for url in urls:
-        try:
-            res = session.get(url, timeout=10)
-            if res.status_code == 200:
-                with open(file_path, 'wb') as f:
-                    f.write(res.content)
-                return True
-        except: continue
-    return False
-
-def generate_catalog():
-    updater = PriceUpdater()
-    logo_session = requests.Session()
-    logo_session.headers.update({'User-Agent': updater.user_agent})
-
-    print(f"🚀 Starting Automated Scraper: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
-
-    # --- TARGETED LIVE UPDATES ---
-    # Sadece taramak istediğimiz ana servisleri buraya ekliyoruz
-    live_prices = {
-        "netflix": updater.get_price_with_playwright(
-            "https://help.netflix.com/tr/node/24926", 
-            "li p", 
-            {"Standart": "Standard", "Özel": "Premium"}
-        ),
-    }
-
     catalog = {
-        "version": "3.1",
+        "version": "6.0",
         "lastUpdated": datetime.now().isoformat(),
         "totalServices": len(SERVICES),
         "services": []
     }
 
-    for index, s in enumerate(SERVICES, 1):
-        print(f"[{index}/{len(SERVICES)}] Processing: {s['name']}...")
+    print(f"🚀 Processing {len(SERVICES)} Services...")
+
+    for i, s in enumerate(SERVICES, 1):
+        print(f"[{i}/{len(SERVICES)}] {s['name']}...")
         
         # 1. Logo Discovery
-        fetch_best_logo(s['domain'], logo_session)
-        img_name = s['domain'].replace('.', '_') + ".png"
-        s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/logos/{img_name}"
+        logo_path = f"logos/{s['domain'].replace('.', '_')}.png"
+        if not os.path.exists('logos'): os.makedirs('logos')
+        if not os.path.exists(logo_path):
+            try:
+                res = session.get(f"https://logo.clearbit.com/{s['domain']}?size=512", timeout=5)
+                if res.status_code == 200:
+                    with open(logo_path, 'wb') as f: f.write(res.content)
+            except: pass
+        
+        s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{logo_path}"
 
-        # 2. Smart Price Logic (Live > Regional > Default)
-        if s['id'] in live_prices and live_prices[s['id']]:
-            scraped_plans = live_prices[s['id']]
-            s['plans'] = [{"name": n, "prices": p} for n, p in scraped_plans.items()]
-            print(f"  ✨ Live update success for {s['name']}")
+        # 2. Data Logic
+        live = scraper.scrape_service(s['id'])
+        if live:
+            s['plans'] = [{"name": n, "prices": p} for n, p in live.items()]
+            print(f"  ✅ Live data matched.")
         elif s['id'] in REGIONAL_PRICES:
-            plans_dict = REGIONAL_PRICES[s['id']]
-            s['plans'] = []
-            for name, prices in plans_dict.items():
-                full_prices = {"USD": 0.0, "TRY": 0.0, "EUR": 0.0, "GBP": 0.0}
-                full_prices.update(prices)
-                s['plans'].append({"name": name, "prices": full_prices})
+            s['plans'] = [{"name": n, "prices": {**{"USD":0,"TRY":0}, **p}} for n, p in REGIONAL_PRICES[s['id']].items()]
+            print(f"  📦 Fallback used.")
         else:
-            s['plans'] = [{"name": "Standard", "prices": {"TRY": 0.0, "USD": 0.0, "EUR": 0.0, "GBP": 0.0}}]
+            s['plans'] = [{"name": "Standard", "prices": {"TRY": 0.0, "USD": 0.0}}]
 
         catalog['services'].append(s)
-        
-        # Anti-ban sleep for logos
-        if index % 15 == 0:
-            time.sleep(1)
+        time.sleep(random.uniform(0.1, 0.5))
 
-    # Save Catalog
     with open('catalog.json', 'w', encoding='utf-8') as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
     
-    print(f"\n✅ FINISHED: catalog.json updated with {len(SERVICES)} services.")
+    print("✨ ALL DONE! catalog.json is ready for GitHub.")
 
 if __name__ == "__main__":
-    generate_catalog()
+    main()

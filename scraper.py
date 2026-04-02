@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import time
 import glob
+import urllib.parse
 # --- CONFIGURATION ---
 GH_USER = "mehmetcan52"
 GH_REPO = "subscription-catalog"
@@ -355,11 +356,10 @@ class VectorLogoEngine:
     def __init__(self):
         self.session = requests.Session()
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
         }
 
     def get_extension(self, content_type, url):
-        """Header'dan veya URL'den gerçek dosya uzantısını bulur."""
         ct = content_type.lower()
         if 'svg' in ct or url.lower().endswith('.svg'): return '.svg'
         if 'webp' in ct: return '.webp'
@@ -367,10 +367,9 @@ class VectorLogoEngine:
         if 'jpeg' in ct or 'jpg' in ct: return '.jpg'
         if 'avif' in ct: return '.avif'
         if 'icon' in ct: return '.ico'
-        return '.png' # Fallback (En kötü ihtimal)
+        return '.png'
 
     def scrape_html_for_icon(self, domain):
-        """HTML içinde önce SVG, yoksa en büyük PNG/WebP arar."""
         try:
             url = f"https://www.{domain}"
             res = self.session.get(url, headers=self.headers, timeout=8)
@@ -384,11 +383,9 @@ class VectorLogoEngine:
 
             for icon in icons:
                 href = str(icon.get('href'))
-                
-                # SVG GÖRDÜĞÜ AN VURUR! (En yüksek öncelik)
                 if icon.get('type') == 'image/svg+xml' or href.lower().endswith('.svg') or 'mask-icon' in icon.get('rel', []):
                     best_href = href
-                    break # SVG bulduk, aramayı bırak.
+                    break 
                 
                 sizes = icon.get('sizes', '0x0').lower()
                 current_size = int(sizes.split('x')[0]) if 'x' in sizes else 0
@@ -408,29 +405,26 @@ class VectorLogoEngine:
         return None
 
     def fetch_logo(self, domain, base_path):
-        """Logoyu indirir ve doğru uzantıyla kaydeder. (Örn: base_path = logos/netflix_com)"""
-        
-        # SÜPER ŞELALE: En üstte SVG kraldır!
+        # YENİ ŞELALE SİSTEMİ (En kaliteliden en düşüğe doğru)
         sources = [
+            ("Clearbit API", f"https://logo.clearbit.com/{domain}?size=512"), # En iyi kalite genelde buradadır
             ("Logo.dev (SVG)", f"https://img.logo.dev/{domain}?format=svg"),
-            ("HTML Scraper", self.scrape_html_for_icon(domain)), # HTML içindeki SVG/HD'yi çeker
+            ("HTML Scraper", self.scrape_html_for_icon(domain)),
             ("Logo.dev (PNG)", f"https://img.logo.dev/{domain}?format=png&size=512"),
-            ("Icon.horse", f"https://icon.horse/icon/{domain}"),
+            ("DuckDuckGo Icons", f"https://icons.duckduckgo.com/ip3/{domain}.ico"), # Yeni Eklendi
             ("Google S2", f"https://www.google.com/s2/favicons?domain={domain}&sz=256")
         ]
 
         for source_name, url in sources:
             if not url: continue
             try:
-                res = self.session.get(url, headers=self.headers, timeout=10)
+                res = self.session.get(url, headers=self.headers, timeout=8)
                 if res.status_code != 200: continue
                 
                 content_type = res.headers.get('Content-Type', '')
                 ext = self.get_extension(content_type, url)
                 file_size = len(res.content)
                 
-                # KALİTE KONTROL: SVG'ler çok küçük boyutlu olabilir (300 byte bile olabilir), 
-                # Ama PNG/JPG ise en az 1500 byte olmalı ki çamur gibi ikonları eleyelim.
                 is_valid_svg = ext == '.svg' and file_size > 100
                 is_valid_raster = ext != '.svg' and file_size > 1500
                 
@@ -444,17 +438,52 @@ class VectorLogoEngine:
                 
         return None, None
 
+    def find_cancel_page(self, name, domain):
+        try:
+            url = "https://lite.duckduckgo.com/lite/"
+            data = {"q": f"how to cancel {name} subscription site:{domain}"}
+            
+            headers = self.headers.copy()
+            headers['Referer'] = 'https://lite.duckduckgo.com/'
+            headers['Origin'] = 'https://lite.duckduckgo.com'
+
+            res = self.session.post(url, headers=headers, data=data, timeout=10)
+            
+            if res.status_code == 200:
+                soup = BeautifulSoup(res.text, 'html.parser')
+                for a in soup.find_all('a', class_='result-url'):
+                    href = a.get('href', '')
+                    if 'uddg=' in href:
+                        parsed_url = urllib.parse.urlparse(href)
+                        query_params = urllib.parse.parse_qs(parsed_url.query)
+                        if 'uddg' in query_params:
+                            real_url = query_params['uddg'][0]
+                            if domain in real_url:
+                                return real_url
+                    elif domain in href:
+                        return href.strip()
+        except:
+            pass
+        return f"https://www.google.com/search?q=how+to+cancel+{urllib.parse.quote(name)}+subscription"
+
 def main():
     engine = VectorLogoEngine()
     logo_dir = "logos"
     if not os.path.exists(logo_dir): os.makedirs(logo_dir)
 
-    print("🚀 Vector Logo Engine v33.0 Started (Multi-Format Support)")
+    print("🚀 Scraper Started (Advanced Logos + Separated JSONs)")
 
-    catalog = {
+    # İKİ AYRI KATALOG OLUŞTURUYORUZ
+    logos_catalog = {
         "lastUpdated": datetime.now().isoformat(),
         "total": len(SERVICES),
-        "services": []
+        "data": []
+    }
+    
+    cancel_catalog = {
+        "lastUpdated": datetime.now().isoformat(),
+        "total": len(SERVICES),
+        "data": []
     }
 
     for i, s in enumerate(SERVICES, 1):
@@ -464,9 +493,8 @@ def main():
         base_fn = domain.replace('.', '_')
         base_path = f"{logo_dir}/{base_fn}"
         
-        # Klasörde bu domaine ait HERHANGİ bir uzantıda dosya var mı kontrol et
+        # 1. BÖLÜM: LOGO İŞLEMLERİ
         existing_files = glob.glob(f"{base_path}.*")
-        
         needs_download = True
         final_ext = ""
         
@@ -474,38 +502,56 @@ def main():
             existing_file = existing_files[0]
             file_size = os.path.getsize(existing_file)
             ext = os.path.splitext(existing_file)[1]
-            
-            # Eğer mevcut dosya SVG ise veya 1.5KB'dan büyük başka bir formattaysa indirmeye gerek yok
             if (ext == '.svg' and file_size > 100) or (ext != '.svg' and file_size > 1500):
                 needs_download = False
                 final_ext = ext
-                
-            # Eğer dosya kalitesizse sil ki yenisi düzgün insin
             if needs_download:
                 os.remove(existing_file)
 
         if needs_download:
             source, ext = engine.fetch_logo(domain, base_path)
             if source:
-                status = f"✅ İNDİRİLDİ ({source} | {ext.upper()})"
+                status = f"✅ LOGO ({source})"
                 final_ext = ext
             else:
-                status = "❌ BULUNAMADI"
-                final_ext = ".png" # Fallback link kırık olmasın diye
+                status = "❌ LOGO YOK"
+                final_ext = ".png"
         else:
-            status = f"📦 ZATEN VAR ({final_ext.upper()})"
+            status = f"📦 LOGO HAZIR"
 
-        print(f"[{i:03d}/{len(SERVICES):03d}] {status} -> {s['name']}")
-        time.sleep(0.2) 
+        # 2. BÖLÜM: İPTAL LİNKİ İŞLEMLERİ
+        cancel_url = engine.find_cancel_page(s['name'], domain)
+        
+        print(f"[{i:03d}/{len(SERVICES):03d}] {status} | İptal: Bulundu -> {s['name']}")
+        
+        # 3. BÖLÜM: VERİLERİ AYRI DOSYALARA YAZMA HAZIRLIĞI
+        logo_url_full = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{base_path}{final_ext}"
+        
+        logos_catalog['data'].append({
+            "id": s["id"],
+            "name": s["name"],
+            "category": s["category"],
+            "logoUrl": logo_url_full
+        })
+        
+        cancel_catalog['data'].append({
+            "id": s["id"],
+            "name": s["name"],
+            "domain": s["domain"],
+            "cancelUrl": cancel_url
+        })
+        
+        time.sleep(1.5) 
 
-        # JSON'a gerçek dosya uzantısını kaydediyoruz (netflix_com.svg gibi)
-        s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{base_path}{final_ext}"
-        catalog['services'].append(s)
+    # DOSYALARI AYRI AYRI KAYDET
+    with open('logos_catalog.json', 'w', encoding='utf-8') as f:
+        json.dump(logos_catalog, f, indent=2, ensure_ascii=False)
+        
+    with open('cancellation_catalog.json', 'w', encoding='utf-8') as f:
+        json.dump(cancel_catalog, f, indent=2, ensure_ascii=False)
 
-    with open('catalog.json', 'w', encoding='utf-8') as f:
-        json.dump(catalog, f, indent=2, ensure_ascii=False)
-
-    print("\n🏁 Taramayı Bitirdik! Vektörler ve yüksek kaliteliler depoya dizildi.")
+    print("\n🏁 İşlem Tamamlandı!")
+    print("📁 'logos_catalog.json' ve 'cancellation_catalog.json' başarıyla oluşturuldu.")
 
 if __name__ == "__main__":
     main()

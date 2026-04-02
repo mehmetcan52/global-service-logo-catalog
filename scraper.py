@@ -7,9 +7,13 @@ from datetime import datetime
 import time
 import glob
 import urllib.parse
+
 # --- CONFIGURATION ---
 GH_USER = "mehmetcan52"
 GH_REPO = "subscription-catalog"
+
+# GÜVENLİK GÜNCELLEMESİ: API anahtarını koddan çıkardık, sistemden çekecek.
+LOGO_DEV_TOKEN = os.getenv("LOGO_DEV_TOKEN")
 
 # --- FULL SERVICES LIST (210 ENTRIES) ---
 SERVICES = [
@@ -351,7 +355,6 @@ SERVICES = [
     {"id": "hopper", "name": "Hopper", "domain": "hopper.com", "category": "Lifestyle"},
     {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"}
 ]
-
 class VectorLogoEngine:
     def __init__(self):
         self.session = requests.Session()
@@ -368,6 +371,19 @@ class VectorLogoEngine:
         if 'avif' in ct: return '.avif'
         if 'icon' in ct: return '.ico'
         return '.png'
+
+    def get_itunes_icon(self, name):
+        try:
+            encoded_name = urllib.parse.quote(name)
+            url = f"https://itunes.apple.com/search?term={encoded_name}&entity=software&country=tr&limit=3"
+            res = self.session.get(url, headers=self.headers, timeout=5)
+            if res.status_code == 200:
+                data = res.json()
+                if data.get('resultCount', 0) > 0:
+                    return data['results'][0].get('artworkUrl512')
+        except:
+            pass
+        return None
 
     def scrape_html_for_icon(self, domain):
         try:
@@ -389,7 +405,6 @@ class VectorLogoEngine:
                 
                 sizes = icon.get('sizes', '0x0').lower()
                 current_size = int(sizes.split('x')[0]) if 'x' in sizes else 0
-                
                 if current_size > max_size:
                     max_size = current_size
                     best_href = href
@@ -404,19 +419,38 @@ class VectorLogoEngine:
             pass
         return None
 
-    def fetch_logo(self, domain, base_path):
-        # YENİ ŞELALE SİSTEMİ (En kaliteliden en düşüğe doğru)
+    def fetch_logo(self, service_id, name, domain, base_path):
+        simple_name = re.sub(r'[^a-z0-9]', '', service_id.lower())
+
+        def get_lazy_itunes(): return self.get_itunes_icon(name)
+        def get_lazy_html(): return self.scrape_html_for_icon(domain)
+
+        # ŞELALE SİSTEMİ (SVG -> PNG -> JPG mantığı eklendi)
         sources = [
-            ("Clearbit API", f"https://logo.clearbit.com/{domain}?size=512"), # En iyi kalite genelde buradadır
-            ("Logo.dev (SVG)", f"https://img.logo.dev/{domain}?format=svg"),
-            ("HTML Scraper", self.scrape_html_for_icon(domain)),
-            ("Logo.dev (PNG)", f"https://img.logo.dev/{domain}?format=png&size=512"),
-            ("DuckDuckGo Icons", f"https://icons.duckduckgo.com/ip3/{domain}.ico"), # Yeni Eklendi
-            ("Google S2", f"https://www.google.com/s2/favicons?domain={domain}&sz=256")
+            ("Simple Icons (SVG)", f"https://cdn.simpleicons.org/{simple_name}"), 
+            ("iTunes API", get_lazy_itunes)
         ]
 
-        for source_name, url in sources:
+        # Eğer Logo.dev token'ı sisteme tanımlanmışsa, asıl ağır topları en tepeye ekle
+        if LOGO_DEV_TOKEN:
+            sources = [
+                ("Logo.dev (SVG)", f"https://img.logo.dev/{domain}?token={LOGO_DEV_TOKEN}&format=svg"),
+                ("Logo.dev (PNG)", f"https://img.logo.dev/{domain}?token={LOGO_DEV_TOKEN}&format=png&size=512"),
+                ("Logo.dev (JPG)", f"https://img.logo.dev/{domain}?token={LOGO_DEV_TOKEN}&format=jpg&size=512")
+            ] + sources
+            
+        # En alt kalitedeki son çareler
+        sources += [
+            ("Clearbit API", f"https://logo.clearbit.com/{domain}?size=512"),
+            ("HTML Scraper", get_lazy_html),
+            ("DuckDuckGo Icons", f"https://icons.duckduckgo.com/ip3/{domain}.ico"),
+            ("Google S2 (256px)", f"https://www.google.com/s2/favicons?domain={domain}&sz=256")
+        ]
+
+        for source_name, url_or_func in sources:
+            url = url_or_func() if callable(url_or_func) else url_or_func
             if not url: continue
+            
             try:
                 res = self.session.get(url, headers=self.headers, timeout=8)
                 if res.status_code != 200: continue
@@ -442,13 +476,11 @@ class VectorLogoEngine:
         try:
             url = "https://lite.duckduckgo.com/lite/"
             data = {"q": f"how to cancel {name} subscription site:{domain}"}
-            
             headers = self.headers.copy()
             headers['Referer'] = 'https://lite.duckduckgo.com/'
             headers['Origin'] = 'https://lite.duckduckgo.com'
 
             res = self.session.post(url, headers=headers, data=data, timeout=10)
-            
             if res.status_code == 200:
                 soup = BeautifulSoup(res.text, 'html.parser')
                 for a in soup.find_all('a', class_='result-url'):
@@ -467,19 +499,20 @@ class VectorLogoEngine:
         return f"https://www.google.com/search?q=how+to+cancel+{urllib.parse.quote(name)}+subscription"
 
 def main():
+    if not LOGO_DEV_TOKEN:
+        print("⚠️ DİKKAT: LOGO_DEV_TOKEN bulunamadı. Logo.dev atlanarak diğer kaynaklar kullanılacak.")
+        
     engine = VectorLogoEngine()
     logo_dir = "logos"
     if not os.path.exists(logo_dir): os.makedirs(logo_dir)
 
-    print("🚀 Scraper Started (Advanced Logos + Separated JSONs)")
+    print("🚀 Scraper Started (Ultra Quality)")
 
-    # İKİ AYRI KATALOG OLUŞTURUYORUZ
     logos_catalog = {
         "lastUpdated": datetime.now().isoformat(),
         "total": len(SERVICES),
         "data": []
     }
-    
     cancel_catalog = {
         "lastUpdated": datetime.now().isoformat(),
         "total": len(SERVICES),
@@ -493,7 +526,6 @@ def main():
         base_fn = domain.replace('.', '_')
         base_path = f"{logo_dir}/{base_fn}"
         
-        # 1. BÖLÜM: LOGO İŞLEMLERİ
         existing_files = glob.glob(f"{base_path}.*")
         needs_download = True
         final_ext = ""
@@ -509,7 +541,7 @@ def main():
                 os.remove(existing_file)
 
         if needs_download:
-            source, ext = engine.fetch_logo(domain, base_path)
+            source, ext = engine.fetch_logo(s['id'], s['name'], domain, base_path)
             if source:
                 status = f"✅ LOGO ({source})"
                 final_ext = ext
@@ -519,12 +551,9 @@ def main():
         else:
             status = f"📦 LOGO HAZIR"
 
-        # 2. BÖLÜM: İPTAL LİNKİ İŞLEMLERİ
         cancel_url = engine.find_cancel_page(s['name'], domain)
-        
         print(f"[{i:03d}/{len(SERVICES):03d}] {status} | İptal: Bulundu -> {s['name']}")
         
-        # 3. BÖLÜM: VERİLERİ AYRI DOSYALARA YAZMA HAZIRLIĞI
         logo_url_full = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{base_path}{final_ext}"
         
         logos_catalog['data'].append({
@@ -533,7 +562,6 @@ def main():
             "category": s["category"],
             "logoUrl": logo_url_full
         })
-        
         cancel_catalog['data'].append({
             "id": s["id"],
             "name": s["name"],
@@ -543,15 +571,14 @@ def main():
         
         time.sleep(1.5) 
 
-    # DOSYALARI AYRI AYRI KAYDET
     with open('logos_catalog.json', 'w', encoding='utf-8') as f:
         json.dump(logos_catalog, f, indent=2, ensure_ascii=False)
-        
     with open('cancellation_catalog.json', 'w', encoding='utf-8') as f:
         json.dump(cancel_catalog, f, indent=2, ensure_ascii=False)
 
     print("\n🏁 İşlem Tamamlandı!")
-    print("📁 'logos_catalog.json' ve 'cancellation_catalog.json' başarıyla oluşturuldu.")
 
+if __name__ == "__main__":
+    main()
 if __name__ == "__main__":
     main()

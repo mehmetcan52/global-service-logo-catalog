@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-02T22:35:00.987245",
-  "total": 320,
+  "lastUpdated": "2026-05-01T03:24:32.196749",
+  "total": 330,
   "data": [
     {
       "id": "netflix",
@@ -271,6 +271,18 @@
       "name": "Tubi TV",
       "category": "Video",
       "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tubitv_com.png"
+    },
+    {
+      "id": "dsmart_go",
+      "name": "D-Smart GO",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/dsmartgo_com_tr.png"
+    },
+    {
+      "id": "tivibu_go",
+      "name": "Tivibu GO",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tivibu_com_tr.png"
     },
     {
       "id": "chatgpt",
@@ -1089,6 +1101,48 @@
       "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/lichess_org.png"
     },
     {
+      "id": "fortnite_crew",
+      "name": "Fortnite Crew",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/fortnite_com.png"
+    },
+    {
+      "id": "linkedin_premium",
+      "name": "LinkedIn Premium",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/linkedin_com.png"
+    },
+    {
+      "id": "x_premium",
+      "name": "X Premium",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/x_com.png"
+    },
+    {
+      "id": "reddit_premium",
+      "name": "Reddit Premium",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/reddit_com.png"
+    },
+    {
+      "id": "patreon",
+      "name": "Patreon",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/patreon_com.png"
+    },
+    {
+      "id": "onlyfans",
+      "name": "OnlyFans",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/onlyfans_com.png"
+    },
+    {
+      "id": "youtube_memberships",
+      "name": "YouTube Kanal Katıl",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/youtube_com.png"
+    },
+    {
       "id": "tinder_gold",
       "name": "Tinder Gold",
       "category": "Lifestyle",
@@ -1111,42 +1165,6 @@
       "name": "Grindr Unlimited",
       "category": "Lifestyle",
       "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/grindr_com.png"
-    },
-    {
-      "id": "linkedin_premium",
-      "name": "LinkedIn Premium",
-      "category": "Social",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/linkedin_com.png"
-    },
-    {
-      "id": "x_premium",
-      "name": "X Premium",
-      "category": "Social",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/x_com.png"
-    },
-    {
-      "id": "reddit_premium",
-      "name": "Reddit Premium",
-      "category": "Social",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/reddit_com.png"
-    },
-    {
-      "id": "strava_premium",
-      "name": "Strava Premium",
-      "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/strava_com.png"
-    },
-    {
-      "id": "komoot",
-      "name": "Komoot Premium",
-      "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/komoot_com.png"
-    },
-    {
-      "id": "alltrails",
-      "name": "AllTrails+",
-      "category": "Fitness",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/alltrails_com.png"
     },
     {
       "id": "uber_one",
@@ -1201,6 +1219,60 @@
       "name": "Blue Apron",
       "category": "Food",
       "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/blueapron_com.png"
+    },
+    {
+      "id": "hepsiburada_premium",
+      "name": "Hepsiburada Premium",
+      "category": "Shopping",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/hepsiburada_com.png"
+    },
+    {
+      "id": "trendyol_pass",
+      "name": "Trendyol Pass",
+      "category": "Shopping",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/trendyol_com.png"
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/airbnb_com.png"
+    },
+    {
+      "id": "booking_com",
+      "name": "Booking.com",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/booking_com.png"
+    },
+    {
+      "id": "expedia",
+      "name": "Expedia",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/expedia_com.png"
+    },
+    {
+      "id": "tripadvisor",
+      "name": "Tripadvisor Plus",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tripadvisor_com.png"
+    },
+    {
+      "id": "priority_pass",
+      "name": "Priority Pass",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/prioritypass_com.png"
+    },
+    {
+      "id": "hopper",
+      "name": "Hopper",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/hopper_com.png"
+    },
+    {
+      "id": "kayak",
+      "name": "KAYAK",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/kayak_com.png"
     },
     {
       "id": "icloud",
@@ -1881,46 +1953,34 @@
       "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/zocdoc_com.png"
     },
     {
-      "id": "airbnb",
-      "name": "Airbnb",
-      "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/airbnb_com.png"
+      "id": "strava_premium",
+      "name": "Strava Premium",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/strava_com.png"
     },
     {
-      "id": "booking_com",
-      "name": "Booking.com",
-      "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/booking_com.png"
+      "id": "komoot",
+      "name": "Komoot Premium",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/komoot_com.png"
     },
     {
-      "id": "expedia",
-      "name": "Expedia",
-      "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/expedia_com.png"
+      "id": "alltrails",
+      "name": "AllTrails+",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/alltrails_com.png"
     },
     {
-      "id": "tripadvisor",
-      "name": "Tripadvisor Plus",
-      "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/tripadvisor_com.png"
+      "id": "apple_fitness",
+      "name": "Apple Fitness+",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/apple_com.png"
     },
     {
-      "id": "priority_pass",
-      "name": "Priority Pass",
-      "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/prioritypass_com.png"
-    },
-    {
-      "id": "hopper",
-      "name": "Hopper",
-      "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/hopper_com.png"
-    },
-    {
-      "id": "kayak",
-      "name": "KAYAK",
-      "category": "Lifestyle",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/kayak_com.png"
+      "id": "apple_one",
+      "name": "Apple One",
+      "category": "Bundle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/logos/apple_com.png"
     }
   ]
 }

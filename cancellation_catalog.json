@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-02T22:35:00.987255",
-  "total": 320,
+  "lastUpdated": "2026-05-01T03:24:32.196757",
+  "total": 330,
   "data": [
     {
       "id": "netflix",
@@ -271,6 +271,18 @@
       "name": "Tubi TV",
       "domain": "tubitv.com",
       "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tubi%20TV+subscription"
+    },
+    {
+      "id": "dsmart_go",
+      "name": "D-Smart GO",
+      "domain": "dsmartgo.com.tr",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+D-Smart%20GO+subscription"
+    },
+    {
+      "id": "tivibu_go",
+      "name": "Tivibu GO",
+      "domain": "tivibu.com.tr",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tivibu%20GO+subscription"
     },
     {
       "id": "chatgpt",
@@ -1089,6 +1101,48 @@
       "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Lichess%20Patron+subscription"
     },
     {
+      "id": "fortnite_crew",
+      "name": "Fortnite Crew",
+      "domain": "fortnite.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Fortnite%20Crew+subscription"
+    },
+    {
+      "id": "linkedin_premium",
+      "name": "LinkedIn Premium",
+      "domain": "linkedin.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+LinkedIn%20Premium+subscription"
+    },
+    {
+      "id": "x_premium",
+      "name": "X Premium",
+      "domain": "x.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+X%20Premium+subscription"
+    },
+    {
+      "id": "reddit_premium",
+      "name": "Reddit Premium",
+      "domain": "reddit.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Reddit%20Premium+subscription"
+    },
+    {
+      "id": "patreon",
+      "name": "Patreon",
+      "domain": "patreon.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Patreon+subscription"
+    },
+    {
+      "id": "onlyfans",
+      "name": "OnlyFans",
+      "domain": "onlyfans.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+OnlyFans+subscription"
+    },
+    {
+      "id": "youtube_memberships",
+      "name": "YouTube Kanal Katıl",
+      "domain": "youtube.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+YouTube%20Kanal%20Kat%C4%B1l+subscription"
+    },
+    {
       "id": "tinder_gold",
       "name": "Tinder Gold",
       "domain": "tinder.com",
@@ -1111,42 +1165,6 @@
       "name": "Grindr Unlimited",
       "domain": "grindr.com",
       "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Grindr%20Unlimited+subscription"
-    },
-    {
-      "id": "linkedin_premium",
-      "name": "LinkedIn Premium",
-      "domain": "linkedin.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+LinkedIn%20Premium+subscription"
-    },
-    {
-      "id": "x_premium",
-      "name": "X Premium",
-      "domain": "x.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+X%20Premium+subscription"
-    },
-    {
-      "id": "reddit_premium",
-      "name": "Reddit Premium",
-      "domain": "reddit.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Reddit%20Premium+subscription"
-    },
-    {
-      "id": "strava_premium",
-      "name": "Strava Premium",
-      "domain": "strava.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Strava%20Premium+subscription"
-    },
-    {
-      "id": "komoot",
-      "name": "Komoot Premium",
-      "domain": "komoot.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Komoot%20Premium+subscription"
-    },
-    {
-      "id": "alltrails",
-      "name": "AllTrails+",
-      "domain": "alltrails.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+AllTrails%2B+subscription"
     },
     {
       "id": "uber_one",
@@ -1201,6 +1219,60 @@
       "name": "Blue Apron",
       "domain": "blueapron.com",
       "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Blue%20Apron+subscription"
+    },
+    {
+      "id": "hepsiburada_premium",
+      "name": "Hepsiburada Premium",
+      "domain": "hepsiburada.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Hepsiburada%20Premium+subscription"
+    },
+    {
+      "id": "trendyol_pass",
+      "name": "Trendyol Pass",
+      "domain": "trendyol.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Trendyol%20Pass+subscription"
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb",
+      "domain": "airbnb.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Airbnb+subscription"
+    },
+    {
+      "id": "booking_com",
+      "name": "Booking.com",
+      "domain": "booking.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Booking.com+subscription"
+    },
+    {
+      "id": "expedia",
+      "name": "Expedia",
+      "domain": "expedia.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Expedia+subscription"
+    },
+    {
+      "id": "tripadvisor",
+      "name": "Tripadvisor Plus",
+      "domain": "tripadvisor.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tripadvisor%20Plus+subscription"
+    },
+    {
+      "id": "priority_pass",
+      "name": "Priority Pass",
+      "domain": "prioritypass.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Priority%20Pass+subscription"
+    },
+    {
+      "id": "hopper",
+      "name": "Hopper",
+      "domain": "hopper.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Hopper+subscription"
+    },
+    {
+      "id": "kayak",
+      "name": "KAYAK",
+      "domain": "kayak.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+KAYAK+subscription"
     },
     {
       "id": "icloud",
@@ -1881,46 +1953,34 @@
       "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Zocdoc+subscription"
     },
     {
-      "id": "airbnb",
-      "name": "Airbnb",
-      "domain": "airbnb.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Airbnb+subscription"
+      "id": "strava_premium",
+      "name": "Strava Premium",
+      "domain": "strava.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Strava%20Premium+subscription"
     },
     {
-      "id": "booking_com",
-      "name": "Booking.com",
-      "domain": "booking.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Booking.com+subscription"
+      "id": "komoot",
+      "name": "Komoot Premium",
+      "domain": "komoot.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Komoot%20Premium+subscription"
     },
     {
-      "id": "expedia",
-      "name": "Expedia",
-      "domain": "expedia.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Expedia+subscription"
+      "id": "alltrails",
+      "name": "AllTrails+",
+      "domain": "alltrails.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+AllTrails%2B+subscription"
     },
     {
-      "id": "tripadvisor",
-      "name": "Tripadvisor Plus",
-      "domain": "tripadvisor.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tripadvisor%20Plus+subscription"
+      "id": "apple_fitness",
+      "name": "Apple Fitness+",
+      "domain": "apple.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Apple%20Fitness%2B+subscription"
     },
     {
-      "id": "priority_pass",
-      "name": "Priority Pass",
-      "domain": "prioritypass.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Priority%20Pass+subscription"
-    },
-    {
-      "id": "hopper",
-      "name": "Hopper",
-      "domain": "hopper.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Hopper+subscription"
-    },
-    {
-      "id": "kayak",
-      "name": "KAYAK",
-      "domain": "kayak.com",
-      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+KAYAK+subscription"
+      "id": "apple_one",
+      "name": "Apple One",
+      "domain": "apple.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Apple%20One+subscription"
     }
   ]
 }
